@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", localGetUser);
 
 const fetchLatestRepos = async (username) => {
   try {
-    const res = await fetch(https://api.github.com/users/${username}/repos);
+    const res = await fetch(`https://api.github.com/users/${username}/repos`);
 
     if (!res.ok) {
       throw new Error('Error while fetching data');
