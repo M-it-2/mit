@@ -1,0 +1,141 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap";
+.html {
+  box-sizing: border-box;
+  cursor: progress;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  user-select: none;
+  background-color: #000;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.main {
+  text-align: center;
+  flex: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__title {
+  font-size: 120px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.main__subtitle {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.main__span {
+  color: #ffcece;
+  text-decoration: underline;
+}
+
+.main__lang {
+  color: #ffcece;
+}
+
+.main__source {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  margin-top: 10px;
+}
+
+.source__item {
+  margin-right: 25px;
+}
+
+.source__item:last-child {
+  margin-right: 0;
+}
+
+.source__link-first {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.source__link {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+
+  transition: all ease 500ms;
+}
+
+.source__link:hover {
+  color: #ffcece;
+}
+
+.list {
+  list-style-type: none;
+}
+
+@media screen and (width <= 520px) {
+  .main__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.footer_span, .footer_link {
+  color: #ffcece;
+}
+
+.visually-hidden {
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+@media screen and (width >= 200px) and (width <= 1096px) {
+  .main__title {
+    font-size: 50px;
+  }
+
+  .main__subtitle, .footer {
+    font-size: 18px;
+  }
+
+  .source__link, .source__link-first {
+    font-size: 18px;
+  }
+}
