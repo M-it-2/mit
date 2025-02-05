@@ -1,2 +1,2 @@
 # mit
-Basic web page for M { it }²
+Basic web page for - ***M { it }²***
